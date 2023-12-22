@@ -2,7 +2,7 @@
 
 int main() {
 
-	// 1. ÀÚ¸´¼ö ºĞ¸®ÇÏ±â
+	// 1. ìë¦¿ìˆ˜ ë¶„ë¦¬í•˜ê¸°
 	//int num, tenThousand, thousand, hundred, ten, one;
 
 	//printf("Enter a integer (0~99999) : ");
@@ -14,23 +14,23 @@ int main() {
 	//ten = (num % 100) / 10;
 	//one = num % 10;
 
-	//printf("%d¸¸%dÃµ%d¹é%d½Ê%d\n", tenThousand, thousand, hundred, ten, one);
+	//printf("%dë§Œ%dì²œ%dë°±%dì‹­%d\n", tenThousand, thousand, hundred, ten, one);
 
-	//// 2. ½Ã°£ ÇüÅÂ·Î º¯È¯ÇÏ±â
+	//// 2. ì‹œê°„ í˜•íƒœë¡œ ë³€í™˜í•˜ê¸°
 
 	//int time, hour, minute, second;
 
-	//printf("Enter a positive integer (minute) : ");
+	//printf("Enter a positive integer (second) : ");
 	//scanf_s("%d", &time);
 	//
 	//hour = time / 3600;
 	//minute = (time % 3600) / 60;
 	//second = (time % 3600) % 60;
 
-	//printf("%d½Ã°£ %dºĞ %dÃÊ", hour, minute, second);
+	//printf("%dì‹œê°„ %dë¶„ %dì´ˆ", hour, minute, second);
 
-	// 3. Æ¯Á¤ ÀÚ¸®¼öÀÇ °ª ÃßÃâÇÏ±â
-	// 4. 100ÀÇ ÀÚ¸® ¹İ¿Ã¸²
+	// 3. íŠ¹ì • ìë¦¬ìˆ˜ì˜ ê°’ ì¶”ì¶œí•˜ê¸°
+	// 4. 100ì˜ ìë¦¬ ë‚´
 
 	//int num, hundred, num4;
 
@@ -43,7 +43,7 @@ int main() {
 	//printf("%d\n", hundred);
 	//printf("%d\n", num4);
 
-	//// 5. Æ¯Á¤ ¹üÀ§ Á¤¼ö ÆÇº°
+	//// 5. íŠ¹ì • ë²”ìœ„ ì •ìˆ˜ íŒë³„
 
 	//int num5, ternary;
 
@@ -53,15 +53,31 @@ int main() {
 	//ternary = (num5 > 20 && num5 < 30) ? 1 : 0;
 	//printf("%d", ternary);
 
-	// 6. Â¦¼ö¿Í È¦¼ö ÆÇº°
+	/*
+ 	ì•„ë˜ ì½”ë“œë„ ì‘ë™í•¨.
+        int num;
+	char result;
+
+	printf("Enter an integer : ");
+	scanf_s("%d", &num);
+
+	result = (num > 20) && (num <= 30) ? 'A' : 'B';
+
+	printf("%c", result);
+ 	*/
+
+	// 6. ì§ìˆ˜ì™€ í™€ìˆ˜ íŒë³„
 
 	int num6;
+	int result;
 
 	printf("Enter a positive integer : ");
 	scanf_s("%d", &num6);
 
-	ternary = (num6 % 2 == 0) ? 
+	result = (num6 % 2 == 0);
 
+	printf("resultëŠ” ì§ìˆ˜ì¼ ë•Œ 1, í™€ìˆ˜ì¼ ë•Œ 0\n");
+	printf("%d",result);
 
 	return 0;
 }
